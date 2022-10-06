@@ -7,6 +7,12 @@ function SideMenu () {
         <h3>link</h3>
         <h3>link</h3>
         <h3>link</h3>
+        <h3>link</h3>
+        <h3>link</h3>
+        <h3>link</h3>
+        <h3>link</h3>
+        <h3>link</h3>
+        <h3>link</h3>
       </nav>
     </aside>
     )
