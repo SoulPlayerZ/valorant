@@ -5,31 +5,23 @@ function Agents () {
   return(
     <main>
       <Header />
+      <div className='aside-container'>
       <SideMenu />
-      <h1>Agents PAGEssssssssss</h1>
-      <h1>Agents PAGEssssssssssss</h1>
-      <h1>Agents PAGEssssssssssssss</h1>
-      <h1>Agents PAGEssssssssss</h1>
-      <h1>Agents PAGEssssssssssss</h1>
-      <h1>Agents PAGEssssssssssssss</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
-      <h1>Agents PAGE</h1>
+      <div className='content-container'>
+
+        <h1>Agents PAGEssssssssss</h1>
+        <h1>Agents PAGEssssssssssss</h1>
+        <h1>Agents PAGEssssssssssssss</h1>
+        <h1>Agents PAGEssssssssss</h1>
+        <h1>Agents PAGEssssssssssss</h1>
+        <h1>Agents PAGEssssssssssssss</h1>
+        <h1>Agents PAGE</h1>
+        <h1>Agents PAGE</h1>
+      </div>
+      <div>
+
+      </div>
+      </div>
     </main>
   )
 }

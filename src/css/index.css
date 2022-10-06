@@ -13,15 +13,39 @@ header {
   position: sticky;
   top: 0;
   border: 2px solid rgb(255, 153, 0);
-  padding: 1.5% 1.5% 1.5% 1.5%;
+  width: 100%;
+}
 
+header h3 {
+  padding: 1%;
+  border: 2px solid red;
+}
+
+header nav a {
+  margin-right: 3em;
+  padding: 1%;
+  border: 2px solid red;
 }
 
 /* ------------ MENU ---------- */
 
-aside {
-  position: fixed;
-  left: 0;
-  padding: 5% 5% 5% 5%;
+aside {  
+  width: 15%;
   border: 2px solid red;
 }
+
+aside h1 {
+  border: 2px solid red;
+  
+}
+
+nav {
+  margin: 15px 15px 15px 15px;
+}
+
+
+.aside-container {
+  display: flex;
+  justify-content: space-between;
+}
+

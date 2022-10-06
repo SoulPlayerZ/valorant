@@ -1,9 +1,7 @@
 function Header () {
   return (
     <header>
-      <section>
-        <h3>Valorant Logo</h3>
-      </section>
+      <h3>Valorant Logo</h3>
       <nav>
         <a href="https://github.com/SoulPlayerZ" target="_blank" rel="noreferrer">github</a>
         <a href="https://www.instagram.com/thyrsokof/?theme=dark" target="_blank" rel="noreferrer">Insta</a>

@@ -1,18 +1,30 @@
+import { Link } from 'react-router-dom';
+
 function SideMenu () {
   return (
     <aside>
+      <h1>Content</h1>
       <nav>
-        <h1>Menu</h1>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
-        <h3>link</h3>
+        <Link to ="/" >Agents</Link>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
+        <h4>link</h4>
       </nav>
     </aside>
     )
