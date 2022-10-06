@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Chars from './components/Chars';
+import Chars from './pages/Chars';
 
 function App() {
   return (
