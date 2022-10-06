@@ -3,11 +3,11 @@ import SideMenu from '../components/SideMenu';
 
 function Agents () {
   return(
-    <div>
+    <main>
       <Header />
       <SideMenu />
       <h1>Agents PAGE</h1>
-    </div>
+    </main>
   )
 }
 
