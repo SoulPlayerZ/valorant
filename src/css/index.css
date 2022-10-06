@@ -1,1 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #32333d;
+  color: rgb(185, 185, 185);
+}
+  
+/* ------------ HEADER ---------- */
+  
+header {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  border: 2px solid rgb(255, 153, 0);
+  padding: 1.5% 1.5% 1.5% 1.5%;
 
+}
+
+/* ------------ MENU ---------- */
+
+aside {
+  position: fixed;
+  left: 0;
+  padding: 5% 5% 5% 5%;
+  border: 2px solid red;
+}
