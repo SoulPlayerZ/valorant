@@ -1,7 +1,22 @@
 import Header from '../components/Header';
 import SideMenu from '../components/SideMenu';
+// import getAllAgents from '../API/fetchs';
+// import { useEffect } from 'react';
 
-function Agents () {
+
+function Agents () { 
+
+  // const getChars = async () => {
+  //   const a = await getAllAgents();
+
+  //   console.log(await a);
+  // }
+
+  // useEffect(() => {
+  //   getChars();
+  // }, []);
+
+
   return(
     <main>
       <Header />
