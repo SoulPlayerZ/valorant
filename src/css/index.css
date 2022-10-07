@@ -12,30 +12,34 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  border: 2px solid rgb(255, 153, 0);
   width: 100%;
+  background-color: #24252b;
 }
 
 .logo {
   width: 4em;
   padding: 20%;
+  background-color: #24252b;
 }
 
 .logo-container {
   margin-left: 1.5%;
   max-width: 200px;
   max-height:150px;
+  background-color: #24252b;
 }
 
 .social {
   padding: 1%;
   height: 200%;
   width: 60%;
+  background-color: #24252b;
 }
 
 header nav {
   display: flex;
   margin: 2em 3em 1em 0;
+  background-color: #24252b;
 }
 
 header a {
@@ -43,27 +47,42 @@ header a {
   height: 50%;
   width: 4em;
   padding: 1%;
+  background-color: #24252b;
 }
 
-/* ------------ MENU ---------- */
+/* ------------ MENU LATERAL ---------- */
 
 aside {  
   width: 15%;
-  border: 2px solid red;
+  background-color: #24252b;
 }
 
 aside h1 {
-  border: 2px solid red;
-  
+  margin-left: 12%;
+  background-color: #24252b;
 }
 
-nav {
-  margin: 15px 15px 15px 15px;
+aside nav {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0 0 10%;
+  background-color: #24252b;
 }
-
 
 .aside-container {
   display: flex;
   justify-content: space-between;
+}
+
+.menu-text {
+  display: flex;
+  background-color: #24252b;
+  text-decoration: none;
+  margin: 1% 1% 5% 1%;
+}
+
+.icon-menu {
+  background-color: #24252b;
+  margin-right: 5%;
 }
 

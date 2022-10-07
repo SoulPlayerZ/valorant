@@ -5,7 +5,7 @@ import { FaTwitch, FaInstagram, FaGithub } from 'react-icons/fa';
 function Header () {
   return (
     <header>
-      <section  className="logo-container">
+      <section className="logo-container">
         <img src={ valorantLogo } alt="valorant-logo" className="logo"/>
       </section>
       <nav>
