@@ -16,15 +16,33 @@ header {
   width: 100%;
 }
 
-header h3 {
-  padding: 1%;
-  border: 2px solid red;
+.logo {
+  width: 4em;
+  padding: 20%;
 }
 
-header nav a {
-  margin-right: 3em;
+.logo-container {
+  margin-left: 1.5%;
+  max-width: 200px;
+  max-height:150px;
+}
+
+.social {
   padding: 1%;
-  border: 2px solid red;
+  height: 200%;
+  width: 60%;
+}
+
+header nav {
+  display: flex;
+  margin: 2em 3em 1em 0;
+}
+
+header a {
+  margin-right: 4%;
+  height: 50%;
+  width: 4em;
+  padding: 1%;
 }
 
 /* ------------ MENU ---------- */
