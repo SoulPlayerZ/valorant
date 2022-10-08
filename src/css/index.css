@@ -12,16 +12,93 @@ header {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  border: 2px solid rgb(255, 153, 0);
-  padding: 1.5% 1.5% 1.5% 1.5%;
-
+  width: 100%;
+  background-color: #24252b;
 }
 
-/* ------------ MENU ---------- */
+.logo {
+  width: 4em;
+  padding: 20%;
+  background-color: #24252b;
+}
 
-aside {
-  position: fixed;
-  left: 0;
-  padding: 5% 5% 5% 5%;
-  border: 2px solid red;
+.logo-container {
+  margin-left: 1.5%;
+  max-width: 200px;
+  max-height:150px;
+  background-color: #24252b;
+}
+
+.social {
+  padding: 1%;
+  height: 200%;
+  width: 60%;
+  background-color: #24252b;
+}
+
+header nav {
+  display: flex;
+  margin: 2em 3em 1em 0;
+  background-color: #24252b;
+}
+
+header a {
+  margin-right: 4%;
+  height: 50%;
+  width: 4em;
+  padding: 1%;
+  background-color: #24252b;
+}
+
+/* ------------ MENU LATERAL ---------- */
+
+aside {  
+  width: 20%;
+  background-color: #24252b;
+}
+
+aside nav {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em 0 0 0;
+  background-color: #24252b;
+}
+
+.aside-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-text {
+  display: flex;
+  background-color: #24252b;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 3% 0 3% 10%;
+  cursor: pointer;
+}
+
+.icon-menu, .menu-label {
+  background-color: #24252b;
+  margin-right: 5%;
+}
+
+
+.menu-label:hover {
+  background-color: #494b55;
+  cursor: pointer;
+}
+
+.menu-label:hover > .menu-text {
+  background-color: #494b55;
+  cursor: pointer;
+}
+
+.menu-label:hover > .menu-text > .icon-menu {
+  background-color: #494b55;
+  cursor: pointer;
+}
+
+.menu-label {
+  width: 100%;
 }
