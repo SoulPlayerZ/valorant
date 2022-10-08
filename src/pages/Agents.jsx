@@ -1,42 +1,38 @@
 import Header from '../components/Header';
 import SideMenu from '../components/SideMenu';
-// import getAllAgents from '../API/fetchs';
-// import { useEffect } from 'react';
+import Loading from '../components/Loading';
+import { useContext } from 'react';
+import AgentsContext from '../context/AgentsContext';
+import getAllAgents from '../API/fetchs';
+import { useEffect } from 'react';
+import CardListAgents from '../components/CardListAgents';
 
 
-function Agents () { 
+function Agents () {
+  const { loading, allAgents, setLoading, setAllAgents } = useContext(AgentsContext);
 
-  // const getChars = async () => {
-  //   const a = await getAllAgents();
+  const renderAgents = async () => {
+    setLoading(true);
+    const agents = await getAllAgents();
+    setAllAgents(agents);
+    setLoading(false);
+  }
 
-  //   console.log(await a);
-  // }
+  useEffect(() => {  
+    renderAgents();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
-  // useEffect(() => {
-  //   getChars();
-  // }, []);
-
-
+    
   return(
     <main>
       <Header />
-      <div className='aside-container'>
-      <SideMenu />
-      <div className='content-container'>
-
-        <h1>Agents PAGEssssssssss</h1>
-        <h1>Agents PAGEssssssssssss</h1>
-        <h1>Agents PAGEssssssssssssss</h1>
-        <h1>Agents PAGEssssssssss</h1>
-        <h1>Agents PAGEssssssssssss</h1>
-        <h1>Agents PAGEssssssssssssss</h1>
-        <h1>Agents PAGE</h1>
-        <h1>Agents PAGE</h1>
-      </div>
-      <div>
-
-      </div>
-      </div>
+      <section className='content-container'>
+        <section className='aside-container'>
+          <SideMenu />
+        </section>
+        {allAgents.length === 0 && !loading ? <Loading /> : <CardListAgents />} 
+      </section>
     </main>
   )
 }
