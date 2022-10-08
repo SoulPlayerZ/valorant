@@ -13,11 +13,12 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 999;
   background-color: #24252b;
 }
 
 .logo {
-  width: 4em;
+  width: 6em;
   padding: 20%;
   background-color: #24252b;
 }
@@ -53,36 +54,35 @@ header a {
 /* ------------ MENU LATERAL ---------- */
 
 aside {  
-  width: 20%;
+  width: 15em;
   background-color: #24252b;
 }
 
 aside nav {
-  display: flex;
-  flex-direction: column;
-  margin: 1.5em 0 0 0;
+  margin: 1em 0 0 0;
   background-color: #24252b;
 }
 
 .aside-container {
   display: flex;
-  justify-content: space-between;
+  background-color: #24252b;
 }
+
 
 .menu-text {
   display: flex;
   background-color: #24252b;
   text-decoration: none;
   font-size: 1.3em;
-  margin: 3% 0 3% 10%;
-  cursor: pointer;
+  margin: 3% 0 3% 10%;  cursor: pointer;
+  color: rgb(185, 185, 185);
 }
 
 .icon-menu, .menu-label {
   background-color: #24252b;
   margin-right: 5%;
+  margin-top: 2%;
 }
-
 
 .menu-label:hover {
   background-color: #494b55;
@@ -90,6 +90,7 @@ aside nav {
 }
 
 .menu-label:hover > .menu-text {
+  color: rgb(185, 185, 185);
   background-color: #494b55;
   cursor: pointer;
 }
@@ -101,4 +102,46 @@ aside nav {
 
 .menu-label {
   width: 100%;
+}
+
+/* ------------ MAIN-CONTENT ---------- */
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------ CARD-LIST ---------- */
+
+.card-list-agents {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2em 1em 0 4em;
+}
+
+/* ------------ CARD AGENT ---------- */
+
+.card-agent {
+  border: 3px solid rgb(141, 40, 40);
+  text-decoration: none;
+  margin: 20px;
+  width: 10rem;
+  transition: transform 0.3s, box-shadow 0.3s ;
+}
+
+.card-title {
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.card-img-top {
+  background-color: rgb(143, 40, 40);
+}
+
+.card-agent:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  z-index: 998;
+  box-shadow: 5px 5px 10px 5px #24252b;
 }
