@@ -57,15 +57,10 @@ aside {
   background-color: #24252b;
 }
 
-aside h1 {
-  margin-left: 12%;
-  background-color: #24252b;
-}
-
 aside nav {
   display: flex;
   flex-direction: column;
-  margin: 1.5em 0 0 10%;
+  margin: 1.5em 0 0 0;
   background-color: #24252b;
 }
 
@@ -79,11 +74,31 @@ aside nav {
   background-color: #24252b;
   text-decoration: none;
   font-size: 1.3em;
-  margin: 2% 1% 5% 1%;
+  margin: 3% 0 3% 10%;
+  cursor: pointer;
 }
 
-.icon-menu {
+.icon-menu, .menu-label {
   background-color: #24252b;
   margin-right: 5%;
 }
 
+
+.menu-label:hover {
+  background-color: #494b55;
+  cursor: pointer;
+}
+
+.menu-label:hover > .menu-text {
+  background-color: #494b55;
+  cursor: pointer;
+}
+
+.menu-label:hover > .menu-text > .icon-menu {
+  background-color: #494b55;
+  cursor: pointer;
+}
+
+.menu-label {
+  width: 100%;
+}
