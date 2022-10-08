@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import AgentsContext from "../context/AgetntsContext";
+import AgentsContext from "../context/AgentsContext";
 import CardAgent from "./CardAgent";
 import NotFound from "./NotFound";
 

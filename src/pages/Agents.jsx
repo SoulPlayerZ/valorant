@@ -5,16 +5,16 @@ import { useContext } from 'react';
 import AgentsContext from '../context/AgentsContext';
 import getAllAgents from '../API/fetchs';
 import { useEffect } from 'react';
+import CardListAgents from '../components/CardListAgents';
 
 
 function Agents () {
-  const { loading, setLoading, setAllAgents, setEnableAgents, enableAgents } = useContext(AgentsContext);
+  const { loading, allAgents, setLoading, setAllAgents } = useContext(AgentsContext);
 
   const renderAgents = async () => {
     setLoading(true);
     const agents = await getAllAgents();
     setAllAgents(agents);
-    setEnableAgents(true);
     setLoading(false);
   }
 
@@ -27,16 +27,15 @@ function Agents () {
   return(
     <main>
       <Header />
-      <div className='aside-container'>
-      <SideMenu />
-      <div className='content-container'>
-      {loading ? <Loading /> : ""} 
-      {enableAgents && !loading ? <h1>Lista de agentes</h1>: ""}
-      </div>
-      <div>
+      <section className='aside-container'>
+        <SideMenu />
+        <section className='content-container'>
+          {allAgents.length === 0 && !loading ? <Loading /> : <CardListAgents />}
+        </section>
+        <div>
 
-      </div>
-      </div>
+        </div>
+      </section>
     </main>
   )
 }

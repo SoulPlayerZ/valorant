@@ -4,7 +4,6 @@ import AgentsContext from "./AgentsContext";
 function AgentsProvider ({ children }) {
   const [allAgents, setAllAgents] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [enableAgents, setEnableAgents] = useState(false);
 
 
 const contextValue = {
@@ -12,9 +11,6 @@ const contextValue = {
   setAllAgents,
   loading,
   setLoading,
-  enableAgents,
-  setEnableAgents,
-
 };
 
 return (
