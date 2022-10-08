@@ -27,14 +27,11 @@ function Agents () {
   return(
     <main>
       <Header />
-      <section className='aside-container'>
-        <SideMenu />
-        <section className='content-container'>
-          {allAgents.length === 0 && !loading ? <Loading /> : <CardListAgents />}
+      <section className='content-container'>
+        <section className='aside-container'>
+          <SideMenu />
         </section>
-        <div>
-
-        </div>
+        {allAgents.length === 0 && !loading ? <Loading /> : <CardListAgents />} 
       </section>
     </main>
   )
