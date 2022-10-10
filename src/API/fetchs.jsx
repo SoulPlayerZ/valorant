@@ -4,4 +4,10 @@ const getAllAgents = async () => {
   return data;
 }
 
+export const getAllContents = async (pathname) => {
+  const agents = await fetch(`https://valorant-api.com/v1${pathname}`);
+  const { data } = await agents.json();
+  return data;
+}
+
 export default getAllAgents;

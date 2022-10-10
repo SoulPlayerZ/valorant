@@ -145,3 +145,11 @@ aside nav {
   z-index: 998;
   box-shadow: 5px 5px 10px 5px #24252b;
 }
+
+
+.generic-card {
+  border: 3px solid rgb(141, 40, 40);
+  text-decoration: none;
+  margin: 20px;
+  width: 10rem;
+}
