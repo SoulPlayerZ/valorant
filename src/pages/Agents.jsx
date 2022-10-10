@@ -6,10 +6,12 @@ import AgentsContext from '../context/AgentsContext';
 import getAllAgents from '../API/fetchs';
 import { useEffect } from 'react';
 import CardListAgents from '../components/CardListAgents';
+import ContentContext from '../context/ContentContext';
 
 
 function Agents () {
-  const { loading, allAgents, setLoading, setAllAgents } = useContext(AgentsContext);
+  const { allAgents, setAllAgents } = useContext(AgentsContext);
+  const { loading, setLoading } = useContext(ContentContext);
 
   const renderAgents = async () => {
     setLoading(true);
@@ -31,7 +33,7 @@ function Agents () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allAgents.length === 0 && !loading ? <Loading /> : <CardListAgents />} 
+        {allAgents.length === 0 && loading ? <Loading /> : <CardListAgents />} 
       </section>
     </main>
   )
