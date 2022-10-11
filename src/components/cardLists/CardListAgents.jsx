@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import AgentsContext from "../context/AgentsContext";
-import CardAgent from "./CardAgent";
+import AgentsContext from "../../context/AgentsContext";
+import CardAgent from "../cards/CardAgent";
 
 function CardListAgents() {
   const { allAgents } = useContext(AgentsContext);
