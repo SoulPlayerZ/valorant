@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import ContentContext from "../../context/ContentContext";
-import CardBuddie from "../cards/CardBuddie";
+import GenericCard from "../cards/GenericCard";
 
-function CardListBuddies() {
+function CardListGeneric () {
   const { allContent } = useContext(ContentContext );
   return (
     <section className="card-list-agents">    
-      {allContent.map((buddie) => (<CardBuddie key={ buddie.uuid } buddie={ buddie }/> ))}
+      {allContent.map((content) => (<GenericCard key={ content.uuid } content={ content }/> ))}
     </section>
   )
 }
 
-export default CardListBuddies;
+export default CardListGeneric;

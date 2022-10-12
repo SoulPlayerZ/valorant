@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import GenericCardList from '../components/GenericCardList';
+import CardListGeneric from '../components/cardLists/CardListGeneric';
 
 
 function Weapons () {
@@ -33,7 +33,7 @@ function Weapons () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allContent.length === 0 && loading ? <Loading /> : <GenericCardList/>} 
+        {allContent.length === 0 && loading ? <Loading /> : <CardListGeneric />} 
       </section>
     </main>
   )

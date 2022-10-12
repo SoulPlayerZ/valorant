@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import { HiUserGroup } from 'react-icons/hi';
-import { GiCarKey, GiPartyPopper, GiRank3, GiHealingShield, GiTabletopPlayers, GiSpray, GiPistolGun } from 'react-icons/gi';
-import { FaBoxes, FaFileContract, FaBorderStyle, FaRegAddressCard } from 'react-icons/fa';
-import { TbDiamond } from 'react-icons/tb';
-import { BsCurrencyExchange, BsCalendar2Event, BsCalendarMinus } from 'react-icons/bs';
+import { GiCarKey, GiSpray, GiPistolGun } from 'react-icons/gi';
+// import { FaBoxes, FaFileContract, FaBorderStyle, FaRegAddressCard } from 'react-icons/fa';
+// import { TbDiamond } from 'react-icons/tb';
+// import { BsCurrencyExchange, BsCalendar2Event, BsCalendarMinus } from 'react-icons/bs';
 import { IoMapSharp } from 'react-icons/io5';
-import { MdOutlineSubtitles } from 'react-icons/md';
-import { MdOutlinePalette } from 'react-icons/md';
+// import { MdOutlineSubtitles } from 'react-icons/md';
+// import { MdOutlinePalette } from 'react-icons/md';
 
 
 function SideMenu () {
