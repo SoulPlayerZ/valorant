@@ -2,13 +2,22 @@ import React, { useState } from "react";
 import ContentContext from "./ContentContext";
 
 function ContentProvider ({ children }) {
-  const [allContent, setAllContents] = useState([]);
+  const [allBuddies, setAllBuddies] = useState([]);
+  const [allMaps, setAllMaps] = useState([]);
+  const [allSprays, setAllSprays] = useState([]);
+  const [allWeapons, setAllWeapons] = useState([]);
   const [loading, setLoading] = useState(false);
 
 
 const contextValue = {
-  allContent,
-  setAllContents,
+  allBuddies,
+  setAllBuddies,
+  allMaps,
+  setAllMaps,
+  allSprays,
+  setAllSprays,
+  allWeapons,
+  setAllWeapons,
   loading,
   setLoading,
 };
