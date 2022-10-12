@@ -6,17 +6,17 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import CardListGeneric from '../components/cardLists/CardListGeneric';
+import CardListSprays from '../components/cardLists/CardListSprays';
 
 
 function Sprays () {
   const location = useLocation();
-  const { loading, allContent, setLoading, setAllContents } = useContext(ContentContext);
+  const { loading, allSprays, setLoading, setAllSprays } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
-    setAllContents(content);
+    setAllSprays(content);
     setLoading(false);
   }
 
@@ -33,7 +33,7 @@ function Sprays () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allContent.length === 0 && loading ? <Loading /> : <CardListGeneric />} 
+        {allSprays.length === 0 && loading ? <Loading /> : <CardListSprays />} 
       </section>
     </main>
   )

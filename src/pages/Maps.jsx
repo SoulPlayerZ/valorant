@@ -6,17 +6,17 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import CardListGeneric from '../components/cardLists/CardListGeneric';
+import CardListMaps from '../components/cardLists/CardListMaps';
 
 
 function Maps () {
   const location = useLocation();
-  const { loading, allContent, setLoading, setAllContents } = useContext(ContentContext);
+  const { loading, allMaps, setLoading, setAllMaps } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
-    setAllContents(content);
+    setAllMaps(content);
     setLoading(false);
   }
 
@@ -33,7 +33,7 @@ function Maps () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allContent.length === 0 && loading ? <Loading /> : <CardListGeneric />} 
+        {allMaps.length === 0 && loading ? <Loading /> : <CardListMaps />} 
       </section>
     </main>
   )

@@ -2,7 +2,7 @@ import React from "react";
 
 function Loading () {
   return(
-    <h1>LOADING...</h1>
+    <section className="Loader"></section>
   )
 }
 

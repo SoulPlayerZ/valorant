@@ -6,17 +6,17 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import CardListGeneric from '../components/cardLists/CardListGeneric';
+import CardListBuddies from '../components/cardLists/CardListBuddies';
 
 
 function Buddies () {
   const location = useLocation();
-  const { loading, allContent, setLoading, setAllContents } = useContext(ContentContext);
+  const { loading, allBuddies, setLoading, setAllBuddies } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
-    setAllContents(content);
+    setAllBuddies(content);
     setLoading(false);
   }
 
@@ -33,7 +33,7 @@ function Buddies () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allContent.length === 0 && loading ? <Loading /> : <CardListGeneric />} 
+        {allBuddies.length === 0 && loading ? <Loading /> : <CardListBuddies />} 
       </section>
     </main>
   )

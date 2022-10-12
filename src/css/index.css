@@ -119,6 +119,13 @@ aside nav {
   margin: 2em 1em 0 4em;
 }
 
+.card-list-maps {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2em 1em 0 4em;
+  height: 825px;
+}
+
 /* ------------ CARD ---------- */
 
 .card-agent {
@@ -152,5 +159,22 @@ aside nav {
 }
 
 .generic-card img {
-  height: 43%;
+  height: 35%;
 }
+
+.card-map img {
+  height: 47%;
+}
+
+.card-weapon  {
+  width: 20em;
+}
+
+.card-weapon img {
+  height: 47%;
+}
+
+
+
+/* ------- LOADING -------- */
+
