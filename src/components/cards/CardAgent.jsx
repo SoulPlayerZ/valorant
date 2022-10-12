@@ -7,8 +7,8 @@ function CardAgent ({ agent }) {
     <Link to={`/agents/${agent.uuid}`} className="card card-agent">
       <img src={ agent.displayIcon } alt="agent-icon" className="card-img-top" />
       <section className="card-body">
-        <h5 className="card-title">{ agent.displayName }</h5>
-        <h7 className="card-text">{ `Codename: ${ agent.developerName }` }</h7>
+        <h4 className="card-title">{ agent.displayName }</h4>
+        <h6 className="card-text">{ `Codename: ${ agent.developerName }` }</h6>
       </section>
     </Link>
   )

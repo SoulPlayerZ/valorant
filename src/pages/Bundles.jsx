@@ -6,10 +6,9 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import GenericCardList from '../components/cardLists/CardListBuddies';
+import CardListBundles from '../components/cardLists/CardListBundles';
 
-
-function Buddies () {
+function Bundles () {
   const location = useLocation();
   const { loading, allContent, setLoading, setAllContents } = useContext(ContentContext);
 
@@ -24,19 +23,17 @@ function Buddies () {
     renderContent();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-    
   return(
     <main>
       <Header />
       <section className='content-container'>
         <section className='aside-container'>
-          <SideMenu />
+            <SideMenu />
         </section>
-        {allContent.length === 0 && loading ? <Loading /> : <GenericCardList/>} 
+        {allContent.length === 0 && loading ? <Loading /> : <CardListBundles />} 
       </section>
     </main>
-  )
+    )
 }
 
-export default Buddies;
+export default Bundles;

@@ -5,7 +5,7 @@ import { useContext } from 'react';
 import AgentsContext from '../context/AgentsContext';
 import getAllAgents from '../API/fetchs';
 import { useEffect } from 'react';
-import CardListAgents from '../components/CardListAgents';
+import CardListAgents from '../components/cardLists/CardListAgents';
 import ContentContext from '../context/ContentContext';
 
 
