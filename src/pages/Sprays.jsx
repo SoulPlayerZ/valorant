@@ -6,17 +6,17 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import CardListBuddies from '../components/cardLists/CardListBuddies';
+import CardListSprays from '../components/cardLists/CardListSprays';
 
 
-function Buddies () {
+function Sprays () {
   const location = useLocation();
-  const { loading, allBuddies, setLoading, setAllBuddies } = useContext(ContentContext);
+  const { loading, allSprays, setLoading, setAllSprays } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
-    setAllBuddies(content);
+    setAllSprays(content);
     setLoading(false);
   }
 
@@ -33,10 +33,10 @@ function Buddies () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allBuddies.length === 0 && loading ? <Loading /> : <CardListBuddies />} 
+        {allSprays.length === 0 && loading ? <Loading /> : <CardListSprays />} 
       </section>
     </main>
   )
 }
 
-export default Buddies;
+export default Sprays;

@@ -119,13 +119,21 @@ aside nav {
   margin: 2em 1em 0 4em;
 }
 
-/* ------------ CARD AGENT ---------- */
+.card-list-maps {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2em 1em 0 4em;
+  height: 825px;
+}
+
+/* ------------ CARD ---------- */
 
 .card-agent {
   border: 3px solid rgb(141, 40, 40);
   text-decoration: none;
   margin: 20px;
   width: 10rem;
+  max-height: 18em;
   transition: transform 0.3s, box-shadow 0.3s ;
 }
 
@@ -146,10 +154,27 @@ aside nav {
   box-shadow: 5px 5px 10px 5px #24252b;
 }
 
-
 .generic-card {
-  border: 3px solid rgb(141, 40, 40);
-  text-decoration: none;
-  margin: 20px;
-  width: 10rem;
+  height: 15em;
 }
+
+.generic-card img {
+  height: 35%;
+}
+
+.card-map img {
+  height: 47%;
+}
+
+.card-weapon  {
+  width: 20em;
+}
+
+.card-weapon img {
+  height: 47%;
+}
+
+
+
+/* ------- LOADING -------- */
+

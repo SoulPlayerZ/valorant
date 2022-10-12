@@ -6,16 +6,17 @@ import { useContext } from 'react';
 import ContentContext from '../context/ContentContext';
 import { getAllContents } from '../API/fetchs';
 import { useEffect } from 'react';
-import CardListBundles from '../components/cardLists/CardListBundles';
+import CardListMaps from '../components/cardLists/CardListMaps';
 
-function Bundles () {
+
+function Maps () {
   const location = useLocation();
-  const { loading, allContent, setLoading, setAllContents } = useContext(ContentContext);
+  const { loading, allMaps, setLoading, setAllMaps } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
-    setAllContents(content);
+    setAllMaps(content);
     setLoading(false);
   }
 
@@ -23,17 +24,19 @@ function Bundles () {
     renderContent();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+    
   return(
     <main>
       <Header />
       <section className='content-container'>
         <section className='aside-container'>
-            <SideMenu />
+          <SideMenu />
         </section>
-        {allContent.length === 0 && loading ? <Loading /> : <CardListBundles />} 
+        {allMaps.length === 0 && loading ? <Loading /> : <CardListMaps />} 
       </section>
     </main>
-    )
+  )
 }
 
-export default Bundles;
+export default Maps;
