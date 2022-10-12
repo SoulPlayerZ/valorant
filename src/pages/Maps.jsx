@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import GenericCardList from '../components/GenericCardList';
 
 
-function Buddies () {
+function Maps () {
   const location = useLocation();
   const { loading, allContent, setLoading, setAllContents } = useContext(ContentContext);
 
@@ -39,4 +39,4 @@ function Buddies () {
   )
 }
 
-export default Buddies;
+export default Maps;

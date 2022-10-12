@@ -126,6 +126,7 @@ aside nav {
   text-decoration: none;
   margin: 20px;
   width: 10rem;
+  max-height: 18em;
   transition: transform 0.3s, box-shadow 0.3s ;
 }
 
