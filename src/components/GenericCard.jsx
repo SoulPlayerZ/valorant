@@ -14,8 +14,8 @@ function GenericCard ({ content }) {
   }
 
   return (
-    <Link to={`${location.pathname}/${content.uuid}`} className="card card-agent">
-      <img src={ verifyMapOrBuddie() } alt="displayImage" className="card-img-top" />
+    <Link to={`${location.pathname}/${content.uuid}`} className="card card-agent generic-card ">
+      <img src={ verifyMapOrBuddie() } alt="Card-Display" className="card-img-top" />
       <section className="card-body">
         <h5 className="card-title">{ content.displayName }</h5>
       </section>

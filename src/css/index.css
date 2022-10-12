@@ -119,7 +119,7 @@ aside nav {
   margin: 2em 1em 0 4em;
 }
 
-/* ------------ CARD AGENT ---------- */
+/* ------------ CARD ---------- */
 
 .card-agent {
   border: 3px solid rgb(141, 40, 40);
@@ -147,10 +147,10 @@ aside nav {
   box-shadow: 5px 5px 10px 5px #24252b;
 }
 
-
 .generic-card {
-  border: 3px solid rgb(141, 40, 40);
-  text-decoration: none;
-  margin: 20px;
-  width: 10rem;
+  height: 17em;
+}
+
+.generic-card img {
+  height: 30%;
 }

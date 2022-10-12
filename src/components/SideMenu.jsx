@@ -23,7 +23,7 @@ function SideMenu () {
             <GiCarKey className='icon-menu'/>Buddies
           </Link>
         </label>
-        <label className='menu-label'>
+        {/* <label className='menu-label'>
           <Link to="/bundles" className='menu-text'>
             <FaBoxes className='icon-menu'/>Bundles
           </Link>
@@ -72,13 +72,13 @@ function SideMenu () {
           <Link to="/levelborders" className='menu-text'>
             <FaBorderStyle className='icon-menu'/>Level Borders
           </Link>
-        </label>
+        </label> */}
         <label className='menu-label'>
           <Link to="/maps" className='menu-text'>
             <IoMapSharp className='icon-menu'/>Maps
           </Link>
         </label>
-        <label className='menu-label'>
+        {/* <label className='menu-label'>
           <Link to="/playercards" className='menu-text'>
             <FaRegAddressCard className='icon-menu'/>Player Cards
           </Link>
@@ -92,17 +92,17 @@ function SideMenu () {
           <Link to="/seasons" className='menu-text'>
             <BsCalendarMinus className='icon-menu'/>Seasons
           </Link>
-        </label>
+        </label> */}
         <label className='menu-label'>
           <Link to="/sprays" className='menu-text'>
             <GiSpray className='icon-menu'/>Sprays
           </Link> 
         </label>
-        <label className='menu-label'>
+        {/* <label className='menu-label'>
           <Link to="/themes" className='menu-text'>
             <MdOutlinePalette className='icon-menu'/>Themes
           </Link>
-        </label>
+        </label> */}
         <label className='menu-label'>
           <Link to="/weapons" className='menu-text'>
             <GiPistolGun className='icon-menu'/>Weapons
