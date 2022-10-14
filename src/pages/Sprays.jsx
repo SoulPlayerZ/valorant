@@ -11,13 +11,16 @@ import CardListSprays from '../components/cardLists/CardListSprays';
 
 function Sprays () {
   const location = useLocation();
-  const { loading, allSprays, setLoading, setAllSprays } = useContext(ContentContext);
+  const { loading, setLoading, setAllSprays } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
     setAllSprays(content);
-    setLoading(false);
+    setTimeout(() => {
+
+      setLoading(false);
+    }, 1000)
   }
 
   useEffect(() => {  
@@ -33,7 +36,7 @@ function Sprays () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allSprays.length === 0 && loading ? <Loading /> : <CardListSprays />} 
+        {loading ? <Loading /> : <CardListSprays />} 
       </section>
     </main>
   )

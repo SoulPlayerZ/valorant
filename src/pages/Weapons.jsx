@@ -11,13 +11,18 @@ import CardListWeapons from '../components/cardLists/CardListWeapons';
 
 function Weapons () {
   const location = useLocation();
-  const { loading, allWeapons, setLoading, setAllWeapons } = useContext(ContentContext);
+  const { loading, setLoading, setAllWeapons } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
+    setTimeout(() => {})
     const content = await getAllContents(location.pathname);
     setAllWeapons(content);
-    setLoading(false);
+
+    setTimeout(() => {
+
+      setLoading(false);
+    }, 1000)
   }
 
   useEffect(() => {  
@@ -33,7 +38,7 @@ function Weapons () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allWeapons.length === 0 && loading ? <Loading /> : <CardListWeapons />} 
+        {loading ? <Loading /> : <CardListWeapons />} 
       </section>
     </main>
   )

@@ -10,14 +10,17 @@ import ContentContext from '../context/ContentContext';
 
 
 function Agents () {
-  const { allAgents, setAllAgents } = useContext(AgentsContext);
+  const { setAllAgents } = useContext(AgentsContext);
   const { loading, setLoading } = useContext(ContentContext);
 
   const renderAgents = async () => {
     setLoading(true);
     const agents = await getAllAgents();
     setAllAgents(agents);
-    setLoading(false);
+    setTimeout(() => {
+
+      setLoading(false);
+    }, 1000)
   }
 
   useEffect(() => {  
@@ -33,7 +36,7 @@ function Agents () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allAgents.length === 0 && loading ? <Loading /> : <CardListAgents />} 
+        {loading ? <Loading /> : <CardListAgents />} 
       </section>
     </main>
   )

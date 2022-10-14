@@ -11,13 +11,16 @@ import CardListBuddies from '../components/cardLists/CardListBuddies';
 
 function Buddies () {
   const location = useLocation();
-  const { loading, allBuddies, setLoading, setAllBuddies } = useContext(ContentContext);
+  const { loading, setLoading, setAllBuddies } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
     setAllBuddies(content);
-    setLoading(false);
+    setTimeout(() => {
+
+      setLoading(false);
+    }, 1000)
   }
 
   useEffect(() => {  
@@ -33,7 +36,7 @@ function Buddies () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allBuddies.length === 0 && loading ? <Loading /> : <CardListBuddies />} 
+        {loading ? <Loading /> : <CardListBuddies />} 
       </section>
     </main>
   )
