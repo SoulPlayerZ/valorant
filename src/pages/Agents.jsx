@@ -36,7 +36,8 @@ function Agents () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {loading ? <Loading /> : <CardListAgents />} 
+        {/* {loading ? <Loading /> : <CardListAgents />}  */}
+        <Loading />
       </section>
     </main>
   )
