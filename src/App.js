@@ -6,16 +6,19 @@ import Maps from './pages/Maps';
 import Weapons from './pages/Weapons';
 import Sprays from './pages/Sprays';
 import "./css/index.css";
+import OneAgente from './pages/OneAgent';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Agents />} />
         <Route path="/buddies" element={<Buddies />} />
         <Route path="/maps" element={<Maps />} />
         <Route path="/weapons" element={<Weapons />} />
         <Route path="/sprays" element={<Sprays />} />
+        <Route path="/agents/:displayName" element={<OneAgente />} />
+        <Route path="/" element={<Agents />} />
+
       </Routes> 
     </BrowserRouter>
   );

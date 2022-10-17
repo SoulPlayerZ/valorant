@@ -3,10 +3,16 @@ import AgentsContext from "./AgentsContext";
 
 function AgentsProvider ({ children }) {
   const [allAgents, setAllAgents] = useState([]);
+  const [oneAgent, setOneAgent] = useState({});
+  const [agentId, setAgentId] = useState("");
 
 const contextValue = {
   allAgents,
   setAllAgents,
+  oneAgent,
+  setOneAgent,
+  agentId,
+  setAgentId,
 };
 
 return (
