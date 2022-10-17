@@ -9,19 +9,18 @@ import { useParams } from "react-router-dom";
 
 function OneAgent () {
   const { displayName } = useParams();
-  const { oneAgent, allAgents, setAllAgents, setOneAgent } = useContext(AgentsContext);
+  const { oneAgent, setOneAgent } = useContext(AgentsContext);
   const { loading, setLoading } = useContext(ContentContext);
 
-  const saveAgentInfo = () => {
-    const agent = allAgents.find((agentInfo) => agentInfo.displayName === displayName)
+  const saveAgentInfo = (agents) => {
+    const agent = agents.find((agentInfo) => agentInfo.displayName === displayName)
     return agent;
   }
 
   const renderOneAgentInfo = async () => {
     setLoading(true);
     const agents = await getAllAgents();
-    setAllAgents(agents);
-    setOneAgent(saveAgentInfo());
+    setOneAgent(saveAgentInfo(agents));
     setTimeout(() => {
 
       setLoading(false);
@@ -40,7 +39,7 @@ function OneAgent () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {allAgents.length === 0 && loading ? <Loading /> : <h1>{`${ oneAgent.displayName} page`}</h1>} 
+        {loading ? <Loading /> : <h1>{`${ oneAgent.displayName} page`}</h1>} 
       </section>
     </main>
   )
