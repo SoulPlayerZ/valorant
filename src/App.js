@@ -7,6 +7,7 @@ import Weapons from './pages/Weapons';
 import Sprays from './pages/Sprays';
 import "./css/index.css";
 import OneAgente from './pages/OneAgent';
+import KAYOPage from './pages/KAYOPage';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/weapons" element={<Weapons />} />
         <Route path="/sprays" element={<Sprays />} />
         <Route path="/agents/:displayName" element={<OneAgente />} />
+        <Route path="/agents/KAY/O" element={<KAYOPage/>} />
         <Route path="/" element={<Agents />} />
 
       </Routes> 

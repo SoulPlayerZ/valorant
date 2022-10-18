@@ -2,7 +2,10 @@ import React from "react";
 
 function AgentContentPage ({oneAgent}) {
   return(
-    <section>{ oneAgent.displayName }</section>
+    <section>
+      <h1>{ oneAgent.displayName }</h1>
+      <img src={ oneAgent.displayIcon }  alt="Agent-Full-Portrait" />
+    </section>
   )
 }
 
