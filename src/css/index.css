@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'VALORANT', sans-serif;
-  src: url('../fonts/Valorant Font.ttf');
-}
+@import url('http://fonts.cdnfonts.com/css/valorant');
 
 * {
   margin: 0;
