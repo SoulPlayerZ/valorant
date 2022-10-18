@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'VALORANT', sans-serif;
-  src: url('../fonts/valorantFont.ttf');
-}
+@import url('http://fonts.cdnfonts.com/css/valorant');
 
 * {
   margin: 0;
@@ -73,7 +70,6 @@ aside nav {
   display: flex;
   background-color: #24252b;
 }
-
 
 .menu-text {
   display: flex;

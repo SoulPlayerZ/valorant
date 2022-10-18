@@ -6,6 +6,7 @@ import ContentContext from "../context/ContentContext";
 import getAllAgents from '../API/fetchs';
 import Loading from "../components/Loading";
 import { useParams } from "react-router-dom";
+import AgentContentPage from "../components/contentsPages/AgentContentPage";
 
 function OneAgent () {
   const { displayName } = useParams();
@@ -39,7 +40,7 @@ function OneAgent () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {loading ? <Loading /> : <h1>{`${ oneAgent.displayName} page`}</h1>} 
+        {loading ? <Loading /> : <AgentContentPage oneAgent={ oneAgent }/>} 
       </section>
     </main>
   )
