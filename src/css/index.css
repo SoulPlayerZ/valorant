@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'VALORANT', sans-serif;
-  src: url('http://fonts.cdnfonts.com/css/valorant');
+  src: url('../fonts/valorantFont.ttf');
 }
 
 * {
