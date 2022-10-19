@@ -2,9 +2,16 @@ import React from "react";
 
 function AgentContentPage ({oneAgent}) {
   return(
-    <section>
-      <h1>{ oneAgent.displayName }</h1>
-      <img src={ oneAgent.displayIcon }  alt="Agent-Full-Portrait" />
+    <section className="one-agent-container">
+      <div className="full-portrait-container">
+        <img src={ oneAgent.fullPortrait }  alt="Agent-Full-Portrait" className="full-portrait"
+          Style={ `background-image: url(${oneAgent.background})` }
+        />
+
+
+      
+        <h1>{ oneAgent.displayName }</h1>
+      </div>
     </section>
   )
 }

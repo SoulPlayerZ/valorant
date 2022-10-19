@@ -217,3 +217,33 @@ https://loading.io/css/
   }
 }
 
+
+/* --------------------  ONE AGENT PAGE ---------------------- */
+
+
+.one-agent-container {
+  display: flex;
+  width: 100%;
+}
+
+.full-portrait {
+  width: 32em;
+  background-size: 90%;
+  background-position: 60%;
+  background-color: rgb(141, 40, 40);
+  margin-top: 5%;
+  box-shadow: 2px 2px 8px 0 rgb(27, 15, 15);
+  border-radius: 3%;
+}
+
+.full-portrait-container {
+  margin-left: 30%;
+}
+
+.full-portrait-container h1 {
+  text-align: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5%;
+  font-family: 'VALORANT';
+}
