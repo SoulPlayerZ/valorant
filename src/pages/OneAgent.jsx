@@ -13,19 +13,17 @@ function OneAgent () {
   const { oneAgent, setOneAgent } = useContext(AgentsContext);
   const { loading, setLoading } = useContext(ContentContext);
 
-  const saveAgentInfo = (agents) => {
+  const filterAgent = (agents) => {
     const agent = agents.find((agentInfo) => agentInfo.displayName === displayName);
     return agent;
   }
 
   const renderOneAgentInfo = async () => {
     setLoading(true);
+    setOneAgent({});
     const agents = await getAllAgents();
-    setOneAgent(saveAgentInfo(agents));
-    setTimeout(() => {
-
-      setLoading(false);
-    }, 1000)
+    setOneAgent(filterAgent(agents));
+    setLoading(false);
   }
 
   useEffect(() => {  
@@ -40,7 +38,8 @@ function OneAgent () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {oneAgent.role === undefined && loading ? <Loading /> : <AgentContentPage oneAgent={ oneAgent }/>} 
+        {oneAgent.role === undefined && loading 
+        ? <Loading /> : <AgentContentPage oneAgent={ oneAgent }/>} 
       </section>
     </main>
   )

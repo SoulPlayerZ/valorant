@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import AgentsContext from "../../context/AgentsContext";
 import CardListAbilities from "../cardLists/CardListAbilities";
 import Loading from "../Loading";
 
-function AgentContentPage ({oneAgent}) {
+function AgentContentPage () {
+  const { oneAgent } = useContext(AgentsContext); 
 
   return(
     <section className="one-agent-info-container">
@@ -37,7 +39,7 @@ function AgentContentPage ({oneAgent}) {
               <h6> { oneAgent.description }</h6>
             </section>
         </section>
-        {oneAgent.role === undefined  ? <Loading/> 
+        {oneAgent.role === undefined ? <Loading/> 
         :
         <section className="agent-description-card">
           <img src={ oneAgent.role.displayIcon} alt="Agent-Icon" className="agent-icon" />

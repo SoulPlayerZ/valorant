@@ -17,10 +17,7 @@ function Buddies () {
     setLoading(true);
     const content = await getAllContents(location.pathname);
     setAllBuddies(content);
-    setTimeout(() => {
-
-      setLoading(false);
-    }, 1000)
+    setLoading(false);
   }
 
   useEffect(() => {  
