@@ -15,14 +15,9 @@ function Weapons () {
 
   const renderContent = async () => {
     setLoading(true);
-    setTimeout(() => {})
     const content = await getAllContents(location.pathname);
     setAllWeapons(content);
-
-    setTimeout(() => {
-
-      setLoading(false);
-    }, 1000)
+    setLoading(false);
   }
 
   useEffect(() => {  

@@ -17,10 +17,7 @@ function Agents () {
     setLoading(true);
     const agents = await getAllAgents();
     setAllAgents(agents);
-    setTimeout(() => {
-
-      setLoading(false);
-    }, 1000)
+    setLoading(false);
   }
 
   useEffect(() => {  
