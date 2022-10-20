@@ -4,8 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 
 function GenericCard ({ content }) {
   const location = useLocation();
-  const clas = `card card-agent ${location.pathname}`;
-  console.log(clas);
+  const clas = `card card-agent card-${location.pathname}`;
 
   const verifyMapOrBuddie = () => {
     if(content.mapUrl) {
