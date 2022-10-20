@@ -261,7 +261,7 @@ https://loading.io/css/
   justify-content: space-between;
   margin: 5% 0 5% 3%;
   width: 100%;
-  height: auto;
+  height: 80%;
   background-color: #32333d;
 
   border-radius: 10px;
@@ -272,25 +272,26 @@ https://loading.io/css/
   justify-content: flex-start;
   margin: 3% 5% 0 0;
   width: 100%;
-  height: auto;
+  height: 70%;
   background-color: #494b55;
   border-radius: 10px;
 }
 
 .agent-icon {
-  margin: 12% 3% 3% 3%;
+  margin: auto;
   background-color: rgb(141, 40, 40);
-  height: 32%;
+  height: 50%;
   padding: 3px 3px 3px 3px;
   border-radius: 50%;
   box-shadow: 2px 2px 8px 0 rgb(27, 15, 15);
 }
 
 .description-text-container {
- margin: 12% 3% 3% 10%;
- max-width: 50%;
- padding: 5px 5px 5px 5px;
- background-color: #494b55;
+  margin: auto;
+  margin-right: 15%;
+  max-width: 50%;
+  padding: 5px 5px 5px 5px;
+  background-color: #494b55;
 }
 
 .description-text-container h5, .description-text-container h6 {
