@@ -7,6 +7,11 @@
   color: rgb(185, 185, 185);
 }
   
+hr {
+  width: 75%;
+  margin: 2% auto 0 auto;
+}
+
 /* ------------ HEADER ---------- */
   
 header {
@@ -242,10 +247,10 @@ https://loading.io/css/
 }
 
 .full-portrait-container {
-  margin: 0 auto;
+  margin: 2% auto;
 }
 
-.full-portrait-container h1 {
+.one-agent-info-container h1 {
   text-align: center;
   width: 50%;
   margin-left: 25%;
@@ -259,8 +264,7 @@ https://loading.io/css/
 .description-card-container {
   display: flex;
   justify-content: space-between;
-  margin: 5% 0 5% 3%;
-  width: 100%;
+  margin: 0 auto 2% 2.5%;
   height: 80%;
   background-color: #32333d;
   border-radius: 10px;
@@ -280,7 +284,7 @@ https://loading.io/css/
 
 .agent-icon {
   margin: auto;
-  background-color: rgb(141, 40, 40);
+  background-color: rgb(121, 121, 121);
   height: 6em;
   padding: 3px 3px 3px 3px;
   border-radius: 50%;
@@ -305,7 +309,7 @@ https://loading.io/css/
 .voice-container {
   display: flex;
   flex-direction: column;
-  margin: 3% auto 0 auto;
+  margin: 3% auto 3% auto;
   width: auto;
   background-color: #494b55;
   border-radius: 10px;
@@ -317,4 +321,24 @@ https://loading.io/css/
   text-align: center;
   margin: 2% auto;
   background-color: #494b55;
+}
+
+/* --------------------  AGENT ABILTIES ---------------------- */
+
+.card-list-abilities {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2% auto 2% 2.5%;
+}
+
+.abilitie-card {
+  display: flex;
+  justify-content: flex-start;
+  margin: 1% 5% 0 0;
+  padding: 20px 20px 20px 20px;
+  width: 45%;
+  height: auto;
+  background-color: #494b55;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 0 rgb(27, 15, 15);
 }
