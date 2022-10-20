@@ -40,7 +40,7 @@ function OneAgent () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {loading ? <Loading /> : <AgentContentPage oneAgent={ oneAgent }/>} 
+        {oneAgent.role === undefined && loading ? <Loading /> : <AgentContentPage oneAgent={ oneAgent }/>} 
       </section>
     </main>
   )
