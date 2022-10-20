@@ -11,16 +11,13 @@ import CardListMaps from '../components/cardLists/CardListMaps';
 
 function Maps () {
   const location = useLocation();
-  const { loading, setLoading, setAllMaps } = useContext(ContentContext);
+  const { loading, allMaps, setLoading, setAllMaps } = useContext(ContentContext);
 
   const renderContent = async () => {
     setLoading(true);
     const content = await getAllContents(location.pathname);
     setAllMaps(content);
-    setTimeout(() => {
-
-      setLoading(false);
-    }, 1000)
+    setLoading(false);
   }
 
   useEffect(() => {  
@@ -36,7 +33,7 @@ function Maps () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {loading ? <Loading /> : <CardListMaps />} 
+        {allMaps.length === 0 && loading ? <Loading /> : <CardListMaps />} 
       </section>
     </main>
   )

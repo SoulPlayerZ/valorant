@@ -8,7 +8,7 @@ import Loading from "../components/Loading";
 import AgentContentPage from "../components/contentsPages/AgentContentPage";
 
 function KAYOPage () {
-  const { oneAgent, setOneAgent } = useContext(AgentsContext);
+  const { setOneAgent } = useContext(AgentsContext);
   const { loading, setLoading } = useContext(ContentContext);
 
   const saveAgentInfo = (agents) => {
@@ -20,10 +20,7 @@ function KAYOPage () {
     setLoading(true);
     const agents = await getAllAgents();
     setOneAgent(saveAgentInfo(agents));
-    setTimeout(() => {
-
-      setLoading(false);
-    }, 1000)
+    setLoading(false);
   }
 
   useEffect(() => {  
@@ -38,7 +35,7 @@ function KAYOPage () {
         <section className='aside-container'>
           <SideMenu />
         </section>
-        {loading ? <Loading /> : <AgentContentPage oneAgent={ oneAgent }/>} 
+        {loading ? <Loading /> : <AgentContentPage />} 
       </section>
     </main>
   )
