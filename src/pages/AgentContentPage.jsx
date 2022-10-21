@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import AgentsContext from "../../context/AgentsContext";
-import CardListAbilities from "../cardLists/CardListAbilities";
-import Loading from "../Loading";
+import AgentsContext from "../context/AgentsContext";
+import CardListAbilities from "../components/cardLists/CardListAbilities";
+import Loading from "../components/Loading";
 
 function AgentContentPage () {
   const { oneAgent } = useContext(AgentsContext); 

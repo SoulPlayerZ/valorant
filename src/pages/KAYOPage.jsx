@@ -5,7 +5,7 @@ import AgentsContext from "../context/AgentsContext";
 import ContentContext from "../context/ContentContext";
 import getAllAgents from '../API/fetchs';
 import Loading from "../components/Loading";
-import AgentContentPage from "../components/contentsPages/AgentContentPage";
+import AgentContentPage from "../pages/AgentContentPage";
 
 function KAYOPage () {
   const { setOneAgent } = useContext(AgentsContext);

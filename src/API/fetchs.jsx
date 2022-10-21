@@ -16,4 +16,10 @@ export const getAgentById = async (uuid) => {
   return data;
 }
 
+export const getMapById = async (uuid) => {
+  const maps = await fetch(`https://valorant-api.com/v1/maps/${uuid}`);
+  const { data } = await maps.json();
+  return data;
+}
+
 export default getAllAgents;
