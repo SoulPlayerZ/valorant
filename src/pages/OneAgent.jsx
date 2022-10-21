@@ -6,7 +6,7 @@ import ContentContext from "../context/ContentContext";
 import getAllAgents from '../API/fetchs';
 import Loading from "../components/Loading";
 import { useParams } from "react-router-dom";
-import AgentContentPage from "../components/contentsPages/AgentContentPage";
+import AgentContentPage from "../pages/AgentContentPage";
 
 function OneAgent () {
   const { displayName } = useParams();

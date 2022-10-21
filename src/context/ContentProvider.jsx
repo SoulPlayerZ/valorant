@@ -4,6 +4,7 @@ import ContentContext from "./ContentContext";
 function ContentProvider ({ children }) {
   const [allBuddies, setAllBuddies] = useState([]);
   const [allMaps, setAllMaps] = useState([]);
+  const [oneMap, setOneMap] = useState({});
   const [allSprays, setAllSprays] = useState([]);
   const [allWeapons, setAllWeapons] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -14,6 +15,8 @@ const contextValue = {
   setAllBuddies,
   allMaps,
   setAllMaps,
+  oneMap,
+  setOneMap,
   allSprays,
   setAllSprays,
   allWeapons,
