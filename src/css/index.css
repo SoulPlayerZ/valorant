@@ -342,3 +342,11 @@ https://loading.io/css/
   border-radius: 10px;
   box-shadow: 2px 2px 8px 0 rgb(27, 15, 15);
 }
+
+
+/* --------------------  ONE CONTENT PAGE ---------------------- */
+
+.display-map {
+  background-color: rgb(121, 121, 121);
+  margin: 2% auto;
+}
