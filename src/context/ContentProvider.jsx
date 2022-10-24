@@ -6,6 +6,7 @@ function ContentProvider ({ children }) {
   const [allMaps, setAllMaps] = useState([]);
   const [oneMap, setOneMap] = useState({});
   const [allSprays, setAllSprays] = useState([]);
+  const [oneSpray, setOneSpray] = useState({});
   const [allWeapons, setAllWeapons] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -19,6 +20,8 @@ const contextValue = {
   setOneMap,
   allSprays,
   setAllSprays,
+  oneSpray,
+  setOneSpray,
   allWeapons,
   setAllWeapons,
   loading,

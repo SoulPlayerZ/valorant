@@ -2,25 +2,25 @@ import React, { useContext, useEffect } from "react";
 import Header from "../components/Header";
 import SideMenu from "../components/SideMenu";
 import ContentContext from "../context/ContentContext";
-import { getMapById } from '../API/fetchs';
+import { getSprayById } from '../API/fetchs';
 import Loading from "../components/Loading";
 import { useParams } from "react-router-dom";
-import MapContentPage from "./MapContentPage";
+import SprayContentPage from "./SprayContentPage";
 
-function OneMap () {
+function OneSpray () {
   const { id } = useParams();
-  const { loading, setLoading, setOneMap } = useContext(ContentContext);
+  const { loading, setLoading, setOneSpray } = useContext(ContentContext);
 
-  const renderOneMapInfo = async () => {
+  const renderOneSprayInfo = async () => {
     setLoading(true);
-    setOneMap({});
-    const map = await getMapById(id);
-    setOneMap(map);
+    setOneSpray({});
+    const spray = await getSprayById(id);
+    setOneSpray(spray);
     setLoading(false);
   }
 
   useEffect(() => {  
-    renderOneMapInfo();
+    renderOneSprayInfo();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
@@ -32,10 +32,10 @@ function OneMap () {
           <SideMenu />
         </section>
         {loading 
-        ? <Loading /> : <MapContentPage /> } 
+        ? <Loading /> : <SprayContentPage />} 
       </section>
     </main>
   )
 }
 
-export default OneMap;
+export default OneSpray;
