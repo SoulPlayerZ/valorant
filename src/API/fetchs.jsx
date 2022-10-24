@@ -28,4 +28,10 @@ export const getSprayById = async (uuid) => {
   return data;
 }
 
+export const getBuddieById = async (uuid) => {
+  const maps = await fetch(`https://valorant-api.com/v1/buddies/${uuid}`);
+  const { data } = await maps.json();
+  return data;
+}
+
 export default getAllAgents;

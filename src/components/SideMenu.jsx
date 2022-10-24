@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { HiUserGroup } from 'react-icons/hi';
-import { GiCarKey, GiSpray, GiPistolGun } from 'react-icons/gi';
+import { GiSpray, GiPistolGun } from 'react-icons/gi';
 // import { FaBoxes, FaFileContract, FaBorderStyle, FaRegAddressCard } from 'react-icons/fa';
 // import { TbDiamond } from 'react-icons/tb';
 // import { BsCurrencyExchange, BsCalendar2Event, BsCalendarMinus } from 'react-icons/bs';
@@ -18,11 +18,11 @@ function SideMenu () {
             <HiUserGroup className='icon-menu'/>Agents
           </Link>
         </label>
-        <label className='menu-label'>
+        {/* <label className='menu-label'>
           <Link to="/buddies" className='menu-text'>
             <GiCarKey className='icon-menu'/>Buddies
           </Link>
-        </label>
+        </label> */}
         {/* <label className='menu-label'>
           <Link to="/bundles" className='menu-text'>
             <FaBoxes className='icon-menu'/>Bundles

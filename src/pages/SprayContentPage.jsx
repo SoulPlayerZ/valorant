@@ -20,7 +20,7 @@ function MapContentPage () {
         <section className="full-portrait-container">
           <h1>{ oneSpray.displayName }</h1>
           <a href={ verifyImgDisplay()  } target="_blank" rel="noreferrer">
-            <img src={ verifyImgDisplay() }  alt="Map-Full-Portrait" className="full-portrait"/>
+            <img src={ verifyImgDisplay() }  alt="spray-Full" className="full-portrait"/>
           </a>  
         </section>
       </section>
