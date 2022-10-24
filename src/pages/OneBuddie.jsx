@@ -2,25 +2,25 @@ import React, { useContext, useEffect } from "react";
 import Header from "../components/Header";
 import SideMenu from "../components/SideMenu";
 import ContentContext from "../context/ContentContext";
-import { getMapById } from '../API/fetchs';
+import { getBuddieById } from '../API/fetchs';
 import Loading from "../components/Loading";
 import { useParams } from "react-router-dom";
-import MapContentPage from "./MapContentPage";
+import BuddieContentPage from "./BuddieContentPage";
 
-function OneMap () {
+function OneBuddie () {
   const { id } = useParams();
-  const { loading, setLoading, setOneMap } = useContext(ContentContext);
+  const { loading, setLoading, setOneBuddie } = useContext(ContentContext);
 
-  const renderOneMapInfo = async () => {
+  const renderOneBuddieInfo = async () => {
     setLoading(true);
-    setOneMap({});
-    const map = await getMapById(id);
-    setOneMap(map);
+    setOneBuddie({});
+    const map = await getBuddieById(id);
+    setOneBuddie(map);
     setLoading(false);
   }
 
   useEffect(() => {  
-    renderOneMapInfo();
+    renderOneBuddieInfo();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
@@ -32,10 +32,10 @@ function OneMap () {
           <SideMenu />
         </section>
         {loading 
-        ? <Loading /> : <MapContentPage /> } 
+        ? <Loading /> : <BuddieContentPage /> } 
       </section>
     </main>
   )
 }
 
-export default OneMap;
+export default OneBuddie;
