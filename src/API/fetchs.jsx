@@ -11,26 +11,32 @@ export const getAllContents = async (pathname) => {
 }
 
 export const getAgentById = async (uuid) => {
-  const agents = await fetch(`https://valorant-api.com/v1/agents/${uuid}`);
-  const { data } = await agents.json();
+  const agent = await fetch(`https://valorant-api.com/v1/agents/${uuid}`);
+  const { data } = await agent.json();
   return data;
 }
 
 export const getMapById = async (uuid) => {
-  const maps = await fetch(`https://valorant-api.com/v1/maps/${uuid}`);
-  const { data } = await maps.json();
+  const map = await fetch(`https://valorant-api.com/v1/maps/${uuid}`);
+  const { data } = await map.json();
   return data;
 }
 
 export const getSprayById = async (uuid) => {
-  const maps = await fetch(`https://valorant-api.com/v1/sprays/${uuid}`);
-  const { data } = await maps.json();
+  const spray = await fetch(`https://valorant-api.com/v1/sprays/${uuid}`);
+  const { data } = await spray.json();
   return data;
 }
 
 export const getBuddieById = async (uuid) => {
-  const maps = await fetch(`https://valorant-api.com/v1/buddies/${uuid}`);
-  const { data } = await maps.json();
+  const buddie = await fetch(`https://valorant-api.com/v1/buddies/${uuid}`);
+  const { data } = await buddie.json();
+  return data;
+}
+
+export const getWeaponById = async (uuid) => {
+  const weapon = await fetch(`https://valorant-api.com/v1/weapons/${uuid}`);
+  const { data } = await weapon.json();
   return data;
 }
 

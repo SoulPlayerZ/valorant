@@ -9,11 +9,13 @@ import OneAgente from './pages/OneAgent';
 import KAYOPage from './pages/KAYOPage';
 import OneMap from './pages/OneMap';
 import OneSpray from './pages/OneSpray';
+import OneWeapon from './pages/OneWeapon';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/weapons/:id" element={<OneWeapon />} />
         <Route path="/weapons" element={<Weapons />} />
         <Route path="/sprays/:id" element={<OneSpray />} />
         <Route path="/sprays" element={<Sprays />} />

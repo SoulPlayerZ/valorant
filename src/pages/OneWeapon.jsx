@@ -2,25 +2,25 @@ import React, { useContext, useEffect } from "react";
 import Header from "../components/Header";
 import SideMenu from "../components/SideMenu";
 import ContentContext from "../context/ContentContext";
-import { getBuddieById } from '../API/fetchs';
+import { getWeaponById } from '../API/fetchs';
 import Loading from "../components/Loading";
 import { useParams } from "react-router-dom";
-import BuddieContentPage from "./BuddieContentPage";
+import WeaponContentPage from "./WeaponContentPage";
 
-function OneBuddie () {
+function OneWeapon () {
   const { id } = useParams();
-  const { loading, setLoading, setOneBuddie } = useContext(ContentContext);
+  const { loading, setLoading, setOneWeapon } = useContext(ContentContext);
 
-  const renderOneBuddieInfo = async () => {
+  const renderOneWeaponInfo = async () => {
     setLoading(true);
-    setOneBuddie({});
-    const buddie = await getBuddieById(id);
-    setOneBuddie(buddie);
+    setOneWeapon({});
+    const weapon = await getWeaponById(id);
+    setOneWeapon(weapon);
     setLoading(false);
   }
 
   useEffect(() => {  
-    renderOneBuddieInfo();
+    renderOneWeaponInfo();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   
@@ -32,10 +32,10 @@ function OneBuddie () {
           <SideMenu />
         </section>
         {loading 
-        ? <Loading /> : <BuddieContentPage /> } 
+        ? <Loading /> : <WeaponContentPage /> } 
       </section>
     </main>
   )
 }
 
-export default OneBuddie;
+export default OneWeapon;
