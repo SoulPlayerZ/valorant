@@ -9,13 +9,14 @@ import WeaponContentPage from "./WeaponContentPage";
 
 function OneWeapon () {
   const { id } = useParams();
-  const { loading, setLoading, setOneWeapon } = useContext(ContentContext);
+  const { loading, setLoading, setOneWeapon, setAllSkins } = useContext(ContentContext);
 
   const renderOneWeaponInfo = async () => {
     setLoading(true);
     setOneWeapon({});
     const weapon = await getWeaponById(id);
     setOneWeapon(weapon);
+    setAllSkins(weapon.skins)
     setLoading(false);
   }
 
