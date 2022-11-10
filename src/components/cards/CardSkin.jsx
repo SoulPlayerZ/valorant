@@ -11,7 +11,7 @@ function CardSkin ({ skin }) {
   }
 
   return (
-    <Link to={`/sssss/${skin.uuid}`} className="card card-agent card-weapon">
+    <Link to={`/weapons/skins/${skin.uuid}`} className="card card-agent card-weapon">
       <img src={ verifyIconForCard() } alt="Card-Display" className="card-img-top" />
       <section className="card-body">
         <h5 className="card-title">{ skin.displayName }</h5>

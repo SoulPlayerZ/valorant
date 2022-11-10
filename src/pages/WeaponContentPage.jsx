@@ -15,7 +15,7 @@ function WeaponContentPage () {
       <section className="one-agent-top-container">
         <section className="full-portrait-container">
           <h1>{ oneWeapon.displayName }</h1>
-          <img src={ oneWeapon.displayIcon }  alt="Map-Full-Portrait" className="full-portrait"/>
+          <img src={ oneWeapon.displayIcon } alt="Weapon-Full-Portrait" className="full-portrait"/>
         </section>
       </section>
 

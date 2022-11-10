@@ -40,4 +40,10 @@ export const getWeaponById = async (uuid) => {
   return data;
 }
 
+export const getSkinById = async (uuid) => {
+  const weapon = await fetch(`https://valorant-api.com/v1/weapons/skins/${uuid}`);
+  const { data } = await weapon.json();
+  return data;
+}
+
 export default getAllAgents;
