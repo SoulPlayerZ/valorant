@@ -28,9 +28,15 @@ function SkinContentPage () {
           </a>  
         </section>
       </section>
-     </section>}
 
-     <h1>Animation</h1>
+      <hr/>
+      <h1>Animation</h1>
+      {!oneSkin.levels[0].streamedVideo ? <h1>aaaa</h1> : <h1>bbbbbb</h1>}
+
+     </section>
+     
+     }
+
     </>
 
 
