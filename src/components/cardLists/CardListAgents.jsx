@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import AgentsContext from "../../context/AgentsContext";
 import CardAgent from "../cards/CardAgent";
 
-function CardListAgents() {
+function CardListAgents () {
   const { allAgents } = useContext(AgentsContext);
   return (
     <section className="card-list-agents">    

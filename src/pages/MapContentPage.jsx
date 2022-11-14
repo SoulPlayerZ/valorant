@@ -9,12 +9,18 @@ function MapContentPage () {
       <section className="one-agent-top-container">
         <section className="full-portrait-container">
           <h1>{ oneMap.displayName }</h1>
-          <img src={ oneMap.splash }  alt="Map-Full-Portrait" className="full-portrait"/>
+          <a href={ oneMap.splash } target="_blank" rel="noreferrer">
+            <img src={ oneMap.splash } alt="map-Splash" className="full-portrait"/>
+          </a>
         </section>
       </section>
       <hr />
       <h1>Display</h1>
-      <img src={ oneMap.displayIcon } alt="Map-Full-Portrait" className="full-portrait display-map"/>
+      <section className="full-portrait-container">
+      <a href={ oneMap.displayIcon } target="_blank" rel="noreferrer">
+        <img src={ oneMap.displayIcon } alt="Map-Display-Icon" />
+      </a>  
+      </section>
     </section>
   )
 }

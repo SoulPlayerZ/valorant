@@ -11,9 +11,11 @@ function AgentContentPage () {
       <section className="one-agent-top-container">
         <section className="full-portrait-container">
           <h1>{ oneAgent.displayName }</h1>
-          <img src={ oneAgent.fullPortrait }  alt="Agent-Full-Portrait" className="full-portrait"
-            Style={ `background-image: url(${oneAgent.background})` }
-          />
+          <a href={ oneAgent.fullPortrait } target="_blank" rel="noreferrer">
+            <img src={ oneAgent.fullPortrait }  alt="Agent-Full-Portrait" className="full-portrait"
+              Style={ `background-image: url(${oneAgent.background})` }
+            />
+          </a>
         </section>
       </section>
 

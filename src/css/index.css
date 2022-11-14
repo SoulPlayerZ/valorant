@@ -350,3 +350,47 @@ https://loading.io/css/
   background-color: rgb(121, 121, 121);
   margin: 2% auto;
 }
+
+
+/* -------------------- ONE WEAPON PAGE ---------------------- */
+
+.info-card-container {
+  width: 30%;
+  margin: 0 auto;
+  
+}
+
+.description-weapon-text-container {
+  margin: auto;
+  max-width: 50%;
+  padding: 5px 5px 5px 5px;
+  background-color: #494b55;
+}
+
+.description-weapon-text-container * {
+  background-color: #494b55;
+  text-align: center;
+}
+
+/* -------------------- SKIN PAGE ---------------------- */
+
+.animation-card {
+  text-align: center;
+  margin: 1% 5% 0 0;
+  padding: 20px 20px 20px 20px;
+  width: 45%;
+  height: auto;
+  background-color: #494b55;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 0 rgb(27, 15, 15);
+}
+
+.animation-card h5 {
+  background-color: #494b55;
+  margin-bottom: 1em;
+}
+
+.animation-card video {
+  width: 95%;
+  border-radius: 3px;
+}
