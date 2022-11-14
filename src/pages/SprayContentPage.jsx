@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import ContentContext from "../context/ContentContext";
 
-function MapContentPage () {
+function SprayContentPage () {
   const { oneSpray } = useContext(ContentContext);
 
   const verifyImgDisplay = () => {
@@ -28,4 +28,4 @@ function MapContentPage () {
   )
 }
 
-export default MapContentPage;
+export default SprayContentPage;
