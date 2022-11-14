@@ -22,10 +22,10 @@ function WeaponContentPage () {
       <hr />
       <h1>Info</h1>
 
-      <section className="description-card-container">
+      <section className="info-card-container">
         <section className="agent-description-card">
           {verifyOneWeaponKeys(oneWeapon) ? <Loading /> :
-            <section className="description-text-container">
+            <section className="description-weapon-text-container">
               <h5> {oneWeapon.shopData.category} </h5>
               <h6> {`Fire Rate: ${oneWeapon.weaponStats.fireRate} rds/sec` }</h6>
               <h6> {`Equipe Speed: ${oneWeapon.weaponStats.equipTimeSeconds} sec` }</h6>

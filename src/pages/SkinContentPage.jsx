@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Loading from "../components/Loading";
+import SkinAnimationContent from "../components/SkinAnimationContent";
 import ContentContext from "../context/ContentContext";
 
 function SkinContentPage () {
@@ -29,9 +30,7 @@ function SkinContentPage () {
         </section>
       </section>
 
-      <hr/>
-      <h1>Animation</h1>
-      {!oneSkin.levels[0].streamedVideo ? <h1>aaaa</h1> : <h1>bbbbbb</h1>}
+      {!oneSkin.levels[0].streamedVideo ? <h1>Does not have animation</h1> : <SkinAnimationContent />}
 
      </section>
      
