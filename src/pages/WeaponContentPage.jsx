@@ -15,10 +15,14 @@ function WeaponContentPage () {
       <section className="one-agent-top-container">
         <section className="full-portrait-container">
           <h1>{ oneWeapon.displayName }</h1>
-          <img src={ oneWeapon.displayIcon } alt="Weapon-Full-Portrait" className="full-portrait"/>
+          <a href={ oneWeapon.displayIcon } target="_blank" rel="noreferrer" >
+            <img src={ oneWeapon.displayIcon } alt="Weapon-Full-Portrait" className="full-portrait"/>
+          </a>
         </section>
       </section>
 
+      {oneWeapon.displayName === "Melee" ? "" :
+      <>
       <hr />
       <h1>Info</h1>
 
@@ -36,7 +40,7 @@ function WeaponContentPage () {
           }
         </section>
       </section>
-
+      </>}
       <hr />
       <h1>Skins</h1>
       <CardListSkins />
