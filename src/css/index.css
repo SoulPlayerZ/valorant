@@ -154,6 +154,9 @@ aside nav {
 
 .card-img-top {
   background-color: rgb(143, 40, 40);
+  aspect-ratio: 3/2;
+  object-fit: contain;
+
 }
 
 .card-agent:hover {
