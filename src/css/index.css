@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/valorant');
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
 
 * {
   margin: 0;
@@ -68,7 +68,7 @@ aside {
 aside nav {
   margin: 1em 0 0 0;
   background-color: #24252b;
-  font-family: 'VALORANT';
+  font-family: 'Signika';
 }
 
 .aside-container {
@@ -191,7 +191,7 @@ aside nav {
 
 .loading-text {
   margin-left: 13px;
-  font-family: 'VALORANT';
+  font-family: 'Signika';
 }
 
 /* - Fonte da animação do Loading - 
@@ -255,7 +255,7 @@ https://loading.io/css/
   width: 50%;
   margin-left: 25%;
   margin-top: 5%;
-  font-family: 'VALORANT';
+  font-family: 'Signika';
 }
 
 
