@@ -21,7 +21,8 @@ function AgentContentPage () {
 
       <hr />
       <h1>Info</h1>
-      {oneAgent.voiceLine === undefined  ? <Loading/> 
+      
+      {/*oneAgent.voiceLine === undefined  ? <Loading/> 
         :
       <section className="voice-container">
         <h5>Voice</h5>
@@ -29,7 +30,7 @@ function AgentContentPage () {
           <track kind="captions"/>
             O seu navegador não suporta o elemento <code>audio</code>.
         </audio>   
-      </section>}
+      </section>*/}
 
 
       
