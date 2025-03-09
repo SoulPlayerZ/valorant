@@ -66,9 +66,11 @@ aside {
 }
 
 aside nav {
-  margin: 1em 0 0 0;
   background-color: #24252b;
   font-family: 'Signika';
+  position: fixed;
+  width: 15em;
+  height: 100%;
 }
 
 .aside-container {
@@ -152,6 +154,9 @@ aside nav {
 
 .card-img-top {
   background-color: rgb(143, 40, 40);
+  aspect-ratio: 3/2;
+  object-fit: contain;
+
 }
 
 .card-agent:hover {
@@ -186,7 +191,7 @@ aside nav {
 /* ------- LOADING -------- */
 
 .loading-container {
-  margin: 5em 43% 0 0;
+  margin: 7em auto;
 }
 
 .loading-text {
